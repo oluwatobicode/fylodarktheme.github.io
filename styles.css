@@ -320,11 +320,13 @@ html.sr .load-hidden {
 /* GET EARLY ACESSS SECTION */
 
 #gts{
-    margin-top: 10rem;
-    /* margin-left: 1rem;
-    margin-right: auto; */
-    /* position: relative;
-    z-index: 9; */
+    align-self: center;
+}
+
+.get-started{
+    height: 300px;
+    padding-top: 3.5rem;
+    padding-bottom: auto;
 }
 
 article{
@@ -367,8 +369,8 @@ form{
 #footer{
     background-color: var(--DarkBluefooter);
     width: 100%;
-    height: 700px;
-    padding-top: 15rem;
+    height: 100%;
+    padding-top: 5rem;
     color: var(--White);
     padding-left: 1rem;
     display: flex;
@@ -422,9 +424,17 @@ form{
     text-align: center;
 }
 
+#copyright-footer{
+    width: 100%;
+    height: 50px;
+    background-color: var(--DarkBluefooter);
+    text-align: center;
+}
+
 .copyright{
     color: var(--White);
 }
+
 
 /* MOBILE - RESPONSIVITY FOR NAVBAR */
   
@@ -508,7 +518,17 @@ form{
 
 @media screen and (min-width:850px) {
     
-    /* TEAM SECTION */
+    /* HERO SECTION */
+    .hero-section-image{
+        width: 700px;
+        height: 700px;
+    }
+
+    .hero-section-text{
+        width: 500px;
+    }
+   
+    /* FEATURES SECTION */
 
     .accessibility-icon{
         grid-column: 1/span 2;
@@ -524,15 +544,34 @@ form{
     }
 
 
+    .security-icon{
+        width: 600px;
+    }
+    
+    .storage-icon{
+        width: 600px;
+    }
+    
+    /* TEAM SECTION */
+    .team-icon{
+        width: 400px;
+        height: 400px;
+    }
 
     /* TESTIMONIAL SECTION */
+    
+    #testimonial{
+        gap: 10px;
+    }
+
     .testimonial-card-1{
         grid-column: 1;
     }
     
     .testimonial-2{
-        grid-column: 3;
+        grid-column: 2;
         margin-top: 0;
+        margin-right: 3rem;
     }
 
     /* TEAM SECTION */
@@ -540,7 +579,6 @@ form{
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 30px;
     }
 
     .team-icon{
@@ -554,6 +592,24 @@ form{
         text-align: left;
     }
 
+    /* GTS SECTION */
     
+    
+    .form-email{
+        width: 40%;
+    }
+
+    .form-button{
+        width: 20%;
+    }
+
+
+    /* FOOTER */
+    
+    #footer{
+     display: flex;
+     flex-direction:row;
+    }
+  
 }
 
